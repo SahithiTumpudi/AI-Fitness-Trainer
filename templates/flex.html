@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pre-page</title>
+    <style>
+
+        img.bg{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            width: 100%;
+            height: 220%;
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+        }
+        
+        h1{
+            background-color: lightslategray;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 50px;
+            text-shadow: 4px 4px black;
+        }
+
+        h2{
+            color: white;
+            padding-left: 150px;
+            font-weight: 1000;
+            font-size: 40px;
+            text-shadow: 3px 3px black;
+        }
+        
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 50px;
+            color: lightslategray;
+            box-shadow: 10px;
+        }
+        .child{
+            color: lightslategray;
+            align-items: center;
+            margin: 5px;
+            border: 5px solid black;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .excs{
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background-color: orange;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        #logo{
+            text-decoration: none;
+            color: red;
+            font-size: 40px;
+            text-align: center;
+            background-color: white;
+            text-shadow: 2px 2px skyblue;
+            margin-left:575px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="bg" src="https://i.pinimg.com/originals/f1/66/2d/f1662d77f4139fe71cf8ba15cdfacb8c.jpg" alt="">
+    <h1>FITNESS TRAINER</h1>
+    <h2>Choose your workout</h2>
+    <div class="container">
+        <div class="child">
+            <img src="https://www.muscleandfitness.com/wp-content/uploads/2014/09/Muscular-Bodybuilder-Doing-Biceps-Workout-With-A-Bicep-Curl.jpg?quality=86&strip=all" alt="bicep" width =500px height="300px">
+            <a class="excs" href="/biceps" target="_blank">BICEPS</a>
+        </div>
+
+        <div class="child">
+            <img src="https://bod-blog-assets.prod.cd.beachbodyondemand.com/bod-blog/wp-content/uploads/2017/08/21124854/shoulder-workouts-960.png" alt="Shoulder Crunch" width =500px height="300px">
+            <a class="excs" href="/shoulderpress" target="_blank">SHOULDER PRESS</a>
+        </div>
+
+        <div class="child">
+            <img src="data:image/jpeg;base64,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" width =500px height="300px">
+            <a class="excs" href="/triceps" target="_blank">TRICEPS</a>
+        </div>
+
+        
+
+        <div class="child">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/young-woman-exercising-outdoors-royalty-free-image-649970260-1560430799.jpg" alt="Squats" width =500px height="300px">
+            <a class="excs" href="" target="_blank">SQUATS</a>
+        </div>
+
+        <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gKOtM9UiWBjjHWevKlkvHNecd_1BKe8Hxg&usqp=CAU" alt="Inclined Chest Press" width =500px height="300px">
+            <a class="excs" href="" target="_blank">INCLINED CHEST PRESS</a>
+        </div>
+
+        <div class="child">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/young-man-performing-press-ups-on-kettlebells-in-royalty-free-image-1585844910.jpg" alt="Pushups" width =500px height="300px">
+            <a class="excs" href="" target="_blank">PUSHUPS</a>
+        </div>
+    </div>
+    <br><br><br>
+    <a  id="logo" href="/">Logout to Homepage</a>
+</body>
+</html>

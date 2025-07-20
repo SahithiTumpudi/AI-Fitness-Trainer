@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <style>
+        img.bg {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+        }
+        
+        h1 {
+            background-color: lightslategray;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 50px;
+            text-shadow: 4px 4px black;
+        }
+        
+        .mydiv {
+            padding-top: 50px;
+            font-weight: bolder;
+            font-size: 25px;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px black;
+        }
+        
+        
+        .leftimg {
+            float: left;
+            padding-left: 50px;
+            padding-top: 110px;
+        }
+        
+        
+        .rightimg {
+            float: right;
+            padding-right: 50px;
+            padding-top: 110px;
+        }
+    </style>
+</head>
+<body>
+    <img class="bg" src="https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png" alt="hui">
+    <h1>FITNESS TRAINER</h1>
+    <div class="leftimg">
+        <img src="https://parade.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTkwNTgxMDc2Njc1MDc3MjQ1/how-to-do-a-squat-jpg.jpg" width =400px  >
+    </div>
+
+    <div class="rightimg">
+        <img src="https://media.istockphoto.com/id/1094479308/photo/bi-racial-man-doing-push-ups-in-sportswear-on-fitness-mat.jpg?s=612x612&w=0&k=20&c=3W7yb-IRh0FmuIv9CDF9OfTXRTogZn6GyDitfpRVA1I=" width =400px>
+    </div>
+
+
+    <div class="mydiv">
+    <h2>Login to continue!!!</h2>
+   <form action="/login" method='post'>
+        <label for="Username">Username:</label><br>
+        <input type="text" id="username" name="username" ><br>
+        <br>
+        <label for="Password">Password:</label><br>
+        <input type="text" id="password" name="password" ><br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>Click 'Submit' to continue</p>
+</div>
+
+</body>
+</html>
